@@ -12,13 +12,14 @@
         .hero{
             height: 400px;
             background-image: url(./assets/images/m_wedding1.jpg);
-            background-size: cover;
-            background-attachment: fixed;
+            background-position: 50em 50em 10em 10em;      
+            background-size: contain;
+            /*background-attachment: fixed;*/
         }
     </style>
 
 </head>
-<body>
+<body class="bg-dark text-white">
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">The Perfect Backdrop</span>
@@ -46,6 +47,8 @@
           </div>
         </div>
     </nav>
+
+    <div class="bg-light hero"></div>
 
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
