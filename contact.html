@@ -52,15 +52,34 @@
                 <div class="card-body">
                     <form>
                         <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" required minlength="10" maxlength="75" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
                             <label for="userId" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="userId" placeholder="name@example.com">
+                            <input type="email" required class="form-control" id="userId" placeholder="name@example.com">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="password">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" required pattern="\(\d{3}\) \d{3}-\d{4}" class="form-control" id="phone" placeholder="Your Phone Number">
                         </div>
                         <div class="mb-3">
-                            <input type="submit"  value="Log In">
+                            <label>Phone type: </label>                  
+                            <label><input type="radio" name="phoneType" value="cell">Cell</label>
+                            <label><input type="radio" name="phoneType" value="work">Work</label>
+                            <label><input type="radio" name="phoneType" value="home">Home</label>
+                        </div>
+                        <div class="mb-3">
+                            <label>Ok to contact me:</label>
+                            <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+                            <label><input type="checkbox" name="okToContact" value="email"> by email</label>    
+                        </div>
+                        <div class="mb-3">
+                            <label>Feedback</label>
+                            <textarea required tabindex="1" name="feedbackText" cols="50" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit"  value="Submit">
                         </div>
                     </form>
                 </div>
