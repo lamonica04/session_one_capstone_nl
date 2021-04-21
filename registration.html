@@ -43,7 +43,7 @@
     </nav>
 
     <div class="container">
-        <div class="justify-content-center h-100 col-md-8 offset-2 text-dark">
+        <div class="row justify-content-center col-md-8 offset-2 text-dark">
             <div class="card">
                 <div class="card-header">
                     <h3>To register, complete the following:</h3>
@@ -63,10 +63,12 @@
                             <input type="text" class="form-control" id="userId" placeholder="City">
                         </div>
 
-                        <div class="mb-3">
-                            <fieldset>
-                                <label for="state">State</label>
-                                <select id="state" name="state">
+
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label" for="state">State</label>
+                                <select class="form-select" id="state" name="state">
                                     <option value="---">---</option>
                                     <option value="Alabama">Alabama</option>
                                     <option value="Alaska">Alaska</option>
@@ -124,12 +126,15 @@
                                     <option value="Wisconsin">Wisconsin</option>
                                     <option value="Wyoming">Wyoming</option>
                                 </select>
-                            </fieldset>
+                            </div>
+
+                            <div class="col mb-3">
+                                <label for="zipCode" class="form-label">Zip Code</label>
+                                <input type="text" class="form-control" id="userId" placeholder="Zip Code">
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="zipCode" class="form-label">Zip Code</label>
-                            <input type="text" class="form-control" id="userId" placeholder="Zip Code">
-                        </div>
+
+
                         <div class="mb-3">
                             <label for="userId" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="userId" placeholder="name@example.com">
