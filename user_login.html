@@ -25,7 +25,7 @@
 </head>
 
 <body class="bg-dark text-white">
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">The Perfect Backdrop</span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -54,55 +54,46 @@
         </div>
     </nav>
 
-
-
-
-    <div class="text-center">
-        <br> <br> <br>
-
-        <form action="./user_login.html" method="POST" enctype="application/x-www-form-urlencoded">
-            <fieldset>
-                <legend>The Perfect Backdrop Log In</legend>
-                <p>
-                    <label for="username">Email Address:</label><br>
-                    <input type="email" id="username" required name="username"><br>
-                </p>
-                <p>
-                    <label for="pwd">Password:</label><br>
-                    <input type="password" id="pwd" required name="pwd"><br>
-                </p>
-                <p>
-                    <label class="form-check-label"><input type="checkbox"> Remember me</label><br>
-                </p>
-            </fieldset>
-            <br>
-            <input type="submit" value="Log In">
-
-        </form>
+    <div class="container">
+        <div class="justify-content-center h-100 text-dark">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="userId" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="userId" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="password">
+                          </div>
+                        <div class="mb-3">
+                            <input type="submit"  value="Log In">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-dark">
+                    <div>
+                        Don't have an account?<a href="./registration.html"> Sign Up</a>
+                    </div>
+                    <div>
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <br> <br>
-        <p><small>&copy; 2021 The Perfect Backdrop - All rights reserved</small></p>
-    </footer>
 
-    <!--nav class="navbar navbar-expand navbar-dark bg-dark">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">&copy; The Perfect Backdrop</span>
-          
-            <ul class="navbar-nav ms-auto" >
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Twitter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Facebook</a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-    </nav-->
+    <footer>
+        <class="mt-3">
+            <br>
+            <p><small> &copy; 2021 The Perfect Backdrop - All rights reserved</small></p>
+        </class>
+    </footer>
 
 </body>
 
