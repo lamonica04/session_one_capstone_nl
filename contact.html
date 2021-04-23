@@ -68,7 +68,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" required pattern="\(\d{3}\) \d{3}-\d{4}" class="form-control" id="phone" placeholder="Your Phone Number">
+                            <input type="tel" required pattern="\(\d{3}\) \d{3}-\d{4}" class="form-control" id="phone" placeholder="(999) 999-9999">
                         </div>
                         <div class="mb-3">
                             <label>Phone type: </label>                  
@@ -83,7 +83,7 @@
                         </div>
                         <div class="mb-3">
                             <label>Feedback</label>
-                            <textarea required tabindex="1" name="feedbackText" cols="50" rows="3"></textarea>
+                            <textarea required tabindex="1" minlength="10" name="feedbackText" cols="50" rows="3"></textarea>
                         </div>
                         <div class="mb-3">
                             <input type="submit"  value="Submit">
